@@ -1,0 +1,52 @@
+{
+	title = "More Lines in NC";
+	entry = {
+		cell = PSLinkCell;
+		icon = "/Applications/Preferences.app/notifications_icon.png";
+		label = "More Lines in NC";
+	};
+	items = (
+		{
+			cell = PSGroupCell;
+		},
+		{
+			cell = PSLinkListCell;
+			default = "-1";
+			defaults = "com.rpetrich.morelinesnotificationcenter";
+			key = forcedMaxLines;
+			label = "Maximum Lines";
+			PostNotification = "com.rpetrich.morelinesnotificationcenter/settingchanged";
+			detail = PSListItemsController;
+			validValues = (
+				"-1",
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+			);
+			validTitles = (
+				Default,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+			);
+		},
+	);
+}
